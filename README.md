@@ -1,6 +1,17 @@
 # TP Sistemas Operativos - 1er Cuatrimestre 2024
 
-Simulación de un sistema operativo distribuido en 4 módulos con algoritmo de paginación simple y file system de asignación contigua.
+Simulación de un sistema operativo distribuido en 4 módulos:
+- CPU
+- Kernel
+- Memoria
+- Entradasalida (interfaces E/S y File System)
+
+Features:
+- Algoritmos de planificacion: FIFO, Round Robin y Virtual Round Robin
+- Memoria con esquema de Paginación Simple
+- TLB
+- File System de Asignación Contigua
+- Interfaces de Input, Output y Generica
 
 ## Grupo "fossil"
 
@@ -14,7 +25,15 @@ Simulación de un sistema operativo distribuido en 4 módulos con algoritmo de p
 
 ## Enunciado
 
-[Link al enunciado](https://docs.google.com/document/d/1-AqFTroovEMcA1BfC2rriB5jsLE6SUa4mbcAox1rPec/edit)
+[C - Comenta](https://docs.google.com/document/d/1-AqFTroovEMcA1BfC2rriB5jsLE6SUa4mbcAox1rPec/edit)
 
-### Si queres probar o compilar el trabajo, tené en cuenta que este tp esta pensado solo para que funcione en un entorno controlado provisto por la [Cátedra](https://docs.utnso.com.ar/recursos/vms) (VM).
-### Si tenes alguna duda de cómo funciona el código podes contactar a los autores.
+## Como ejecutar
+
+### Requerimientos
+- Entorno Unix (preferentemente alguna version de Ubuntu, ya que fue el entorno provisto por la catedra y el utilizado para su desarrollo)
+- Libreria commons utnso - https://github.com/sisoputnfrba/so-commons-library
+
+Realizar build de cada modulo (utilizar makefile) y ejecutar en el siguiente orden: Memoria - CPU - Kernel - interfaces
+Nota: Chequear direcciones IP en los configs si se levantan diferentes computadoras
+
+[Pruebas que le hicieron al trabajo](https://docs.google.com/document/d/1XsBsJynoN5A9PTsTEaZsj0q3zsEtcnLgdAHOQ4f_4-g/edit)
